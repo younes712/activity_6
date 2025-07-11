@@ -1,0 +1,15 @@
+filesystem:
+  command: /home/yyy/.nvm/versions/node/v22.15.0/bin/npx
+  args:
+    - -y
+    - @modelcontextprotocol/server-filesystem
+    - /home/yyy/IdeaProjects/mcp_demo
+Python-MCP-Server:
+  command: /snap/bin/uv
+  args:
+    - run
+    - --with
+    - mcp[cli]
+    - mcp
+    - run
+    - /home/yyy/IdeaProjects/mcp_demo/python_mcp_server/server.py
